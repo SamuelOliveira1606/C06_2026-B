@@ -11,17 +11,17 @@ public class notafinal {
         if (NPA >= 60){ //Aluno Aprovou direto
             System.out.println("Fazer NP3: Não");
             System.out.println("Aluno Aprovado");
-        } else if (NPA >= 30 && NPA < 60) {
+        } else if (NPA >= 30 && NPA < 60) { //Aluno ficou de NP3
             System.out.println("Fazer NP3: Sim");
             System.out.println("Digite a nota NP3: ");
             int NP3 = entrada.nextInt();
             int NPF = NPA+NP3;
-            if (NPF >= 100){
+            if (NPF >= 100){ //Aluno Aprovou pela NP3
                 System.out.println("Aluno Aprovado");
             } else {
                 System.out.println("Aluno Reprovado");
             }
-        } else {
+        } else { //Aluno Reprovou direto
             System.out.println("Fazer NP3: Não");
             System.out.println("Aluno Reprovado");
         }
